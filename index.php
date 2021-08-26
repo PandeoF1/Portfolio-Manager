@@ -101,7 +101,7 @@ else
 	}
 ?>
 
-	<body>
+	<body padding-top="7px">
 		<div class="center">
 			<h4 class="mb-4 col-6 mx-auto">Espace admin</h4>
 			<div class="col-6 mx-auto mb-4">
@@ -114,7 +114,9 @@ else
 						<label for="mdp">Mot de passe</label>
 						<input type="mdp" class="form-control" id="mdp" placeholder="Mot de passe" name="mdp">
 					</div>
-					<input type="submit" class="btn btn-primary" value="Login">
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary" value="Login">
+					</div>
 					<br><br>
 					<?php if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) { ?>
 						<div class="alert">
