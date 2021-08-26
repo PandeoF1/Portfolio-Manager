@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_URI"] == "/")
 else if ($url_parse[0] == "admin" || $url_parse[0] == "error" || $url_parse[0] == "login")
 	$div[$url_parse[0]] = 1;
 else
-	header("location: /403.php");
+	$div["error"] = 1;
 
 ?>
 
