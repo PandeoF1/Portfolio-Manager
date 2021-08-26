@@ -44,9 +44,7 @@ else
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <?php if (isset($div["/"])) { ?>
-
-	<body style="padding-top: 70px">
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Navbar</a>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent1">
 				<ul class="navbar-nav mr-auto">
@@ -66,6 +64,8 @@ else
 				</form>
 			</div>
 		</nav>
+	<body style="padding-top: 70px">
+		
 	</body>
 
 <?php } ?>
