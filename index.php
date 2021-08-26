@@ -35,8 +35,8 @@ else
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo "Portfolio PLANQUE Clement" ?></title>
-	<link src="style/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<script src="style/bootstrap.bundle.min.js"></script>
+	<link src="/style/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="/style/bootstrap.bundle.min.js"></script>
 </head>
 <?php if (isset($div["/"])){ ?>
 
