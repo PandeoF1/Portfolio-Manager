@@ -6,13 +6,15 @@
 
 	$result = $mysqli->query("SELECT * FROM test");
 	$row	= $result->fetch_row();
-	if ()
-	foreach ($row as $row_)
-		echo $row_;
+	if ($_SERVER["REQUEST_URI"] != "/")
+	{
+		foreach ($row as $row_)
+			echo $row_;
 
-	echo "<br>url : ";
-	$url_parse = explode("/", trim($_SERVER["REQUEST_URI"], "/"));
-	echo $_SERVER["REQUEST_URI"];
+		echo "<br>url : ";
+		$url_parse = explode("/", trim($_SERVER["REQUEST_URI"], "/"));
+		echo $_SERVER["REQUEST_URI"];
+	}
 	if ($_SERVER["REQUEST_URI"] == "/")
 		$div["/"] = 1;
 	else
