@@ -93,7 +93,7 @@ else
 		header("location: /admin/");
 	if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) {
 		$email = $_POST["identifiant"];
-		$pass = $_POST["mdp"];
+		$pass = $_POST["mdp"] . "fdsoufusahSFIUsaIUfdsiyhgfiuASHFIUdhsggfiyhDSAHfg";
 		$result = $mysqli->query(
 			"SELECT * FROM `account` WHERE email = '$email'"
 		);
