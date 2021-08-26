@@ -27,7 +27,7 @@
 ## Requirements :
  > - apache <br />
  > - mysql/mariadb <br />
- > - php <br />
+ > - php (xml / mysqli)<br />
 
 ### Demo :
 - User : admin
