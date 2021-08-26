@@ -117,6 +117,7 @@ else
 						<label for="mdp">Mot de passe</label>
 						<input type="mdp" class="form-control" id="mdp" placeholder="Mot de passe" name="mdp">
 					</div>
+					<br><br>
 					<div class="form-group">
 						<input type="submit" class="btn btn-primary" value="Login">
 					</div>
