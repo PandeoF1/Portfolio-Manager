@@ -47,9 +47,11 @@ else
 <?php if (isset($div["/"])) { ?>
 
 	<body style="padding-top: 70px; background-image: url('/images/background.webp'); background-repeat: no-repeat; background-size: 100%; background-color: #333333;">
-		<nav style="text-align: center; position: fixed;">
-			<b><a href="/projects" style="color: #16A7F2">Projects</a></b>
-		</nav>
+		<div style="width: 100%;">
+			<nav style="text-align: center; position: fixed;">
+				<b><a href="/projects" style="color: #16A7F2">Projects</a></b>
+			</nav>
+		</div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</body>
 
