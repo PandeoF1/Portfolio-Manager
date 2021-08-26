@@ -41,6 +41,7 @@ else
 	<body>
 		<div class="container">
 			<p>Salut</p>
+			<h1>Test</h1>
 		</div>
 	</body>
 <?php } ?>
