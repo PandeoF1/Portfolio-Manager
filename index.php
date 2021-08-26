@@ -45,7 +45,7 @@ else
 </head>
 <?php if (isset($div["/"])) { ?>
 
-	<body style="padding-top: 70px">
+	<body style="padding-top: 70px" background="gray">
 		
 	</body>
 
