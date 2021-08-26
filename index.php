@@ -1,5 +1,4 @@
 <?php
-
 $mysqli = new mysqli("pandeo.fr", "xxloubexx", "xxloubexx", "xxloubexx");
 $result = $mysqli->query("SELECT * FROM test");
 $row	= $result->fetch_row();
