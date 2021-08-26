@@ -8,12 +8,23 @@ session_start();
 
 $result = $mysqli->query("SELECT * FROM test");
 $row	= $result->fetch_row();
+$url_parse = explode("/", trim($_SERVER["REQUEST_URI"], "/"));
+
+if ($url_parse[0] == "") //Nerf for title
+	$url_parse[0] = "/";
+
+// Fetch title
+$result = $mysqli->query(
+	"SELECT * FROM `title` WHERE url = '$url_parse[0]'"
+);
+while($row = $result->fetch_row())
+	$title = $row[2];
+
 if ($_SERVER["REQUEST_URI"] != "/") {
 	foreach ($row as $row_)
 		echo $row_;
 
 	echo "<br>url : ";
-	$url_parse = explode("/", trim($_SERVER["REQUEST_URI"], "/"));
 	echo $_SERVER["REQUEST_URI"];
 }
 if ($_SERVER["REQUEST_URI"] == "/")
@@ -32,11 +43,23 @@ else
 
 <head>
 	<meta charset="utf-8">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+	<title><?php echo $title ?></title>
+	<link src="style/bootstrap.min.css" rel="stylesheet" />
+	<script src="style/bootstrap.bundle.min.js"></script>
+=======
+>>>>>>> Stashed changes
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo "Portfolio PLANQUE Clement" ?></title>
 	<link src="/style/bootstrap.min.css" rel="stylesheet" />
 	<script src="/style/bootstrap.bundle.min.js"></script>
+<<<<<<< Updated upstream
+=======
+>>>>>>> main
+>>>>>>> Stashed changes
 </head>
 <?php if (isset($div["/"])){ ?>
 
