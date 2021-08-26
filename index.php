@@ -39,7 +39,9 @@ else
 <?php if ($div["/"]) { ?>
 
 	<body>
-		<p>Salut</p>
+		<div class="container">
+			<p>Salut</p>
+		</div>
 	</body>
 <?php } ?>
 <?php if ($div["admin"]) {
