@@ -45,7 +45,7 @@ else
 </head>
 <?php if (isset($div["/"])) { ?>
 
-	<body style="padding-top: 70px; background-image: url('/images/background.jpg');">
+	<body style="padding-top: 70px; background-image: url('/images/background.jpg'); background-size: 100%;">
 		
 	</body>
 
