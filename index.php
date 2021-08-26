@@ -43,23 +43,14 @@ else
 
 <head>
 	<meta charset="utf-8">
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 	<title><?php echo $title ?></title>
 	<link src="style/bootstrap.min.css" rel="stylesheet" />
 	<script src="style/bootstrap.bundle.min.js"></script>
-=======
->>>>>>> Stashed changes
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo "Portfolio PLANQUE Clement" ?></title>
 	<link src="/style/bootstrap.min.css" rel="stylesheet" />
 	<script src="/style/bootstrap.bundle.min.js"></script>
-<<<<<<< Updated upstream
-=======
->>>>>>> main
->>>>>>> Stashed changes
 </head>
 <?php if (isset($div["/"])){ ?>
 
