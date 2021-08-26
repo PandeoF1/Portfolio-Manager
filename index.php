@@ -50,12 +50,14 @@ else
 	<body style="padding-top: 21px; background-image: url('/images/background.webp'); background-repeat: no-repeat; background-size: 100%; background-color: #353235;">
 		<div style="width: 100%; position: fixed;">
 			<nav style="text-align: center; position: relative;">
-				<a href="/projects">Projects</a>
-				<div class="vl"></div>
-				<a href="/files/CV.pdf">CV</a>
-				<div class="vl"></div>
-				<a href="/contact">Contact</a>
+				<div class="row">
+					<a href="/projects">Projects</a>
+					<div class="vl"></div>
+					<a href="/files/CV.pdf">CV</a>
+					<div class="vl"></div>
+					<a href="/contact">Contact</a>
 			</nav>
+		</div>
 		</div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</body>
