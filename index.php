@@ -3,6 +3,9 @@ require "config/mysql.conf.php";
 
 $mysqli = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
+$mysqli->query(
+	"INSERT INTO `log` (`id`, `ip`, `message`) VALUES (NULL, '" .$_SERVER['REMOTE_ADDR'] . "', '" . $_SERVER["REQUEST_URI"] ."')"
+);
 
 session_start();
 
