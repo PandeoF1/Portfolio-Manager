@@ -162,7 +162,7 @@ else
                         <p class="m-0">404</p>
                     </div>
                     <p class="text-dark mb-5 lead">Page Not Found</p>
-                    <p class="text-black-50 mb-0">It looks like you found a glitch in the matrix...</p><a href="./login.php">← Back to Login</a></div>
+                    <p class="text-black-50 mb-0">It looks like you found a glitch in the matrix...</p><a href="/">← Back to Login</a></div>
             </div>
         </div>
         <footer class="bg-white sticky-footer">
