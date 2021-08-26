@@ -42,11 +42,6 @@ else
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<div id="wrapper">
-		<div class="scrollbar" id="style-bar">
-			<div class="force-overflow"></div>
-		</div>
-	</div>
 </head>
 <?php if (isset($div["/"])) { ?>
 
