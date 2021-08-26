@@ -6,8 +6,6 @@ $mysqli = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
 session_start();
 
-$result = $mysqli->query("SELECT * FROM test");
-$row	= $result->fetch_row();
 $url_parse = explode("/", trim($_SERVER["REQUEST_URI"], "/"));
 
 if ($url_parse[0] == "") //Nerf for title
@@ -20,13 +18,6 @@ $result = $mysqli->query(
 while($row = $result->fetch_row())
 	$title = $row[2];
 
-if ($_SERVER["REQUEST_URI"] != "/") {
-	foreach ($row as $row_)
-		echo $row_;
-
-	echo "<br>url : ";
-	echo $_SERVER["REQUEST_URI"];
-}
 if ($_SERVER["REQUEST_URI"] == "/")
 	$div["/"] = 1;
 else if ($url_parse[0] == "admin" || $url_parse[0] == "error" || $url_parse[0] == "login")
@@ -93,7 +84,7 @@ else
 		header("location: /admin/");
 	if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) {
 		$email = $_POST["identifiant"];
-		$pass = $_POST["mdp"] . "fdsoufusahSFIUsaIUfdsiyhgfiuASHFIUdhsggfiyhDSAHfg";
+		$pass = $_POST["mdp"] . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgFDsgfd";
 		$result = $mysqli->query(
 			"SELECT * FROM `account` WHERE email = '$email'"
 		);
