@@ -1,3 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(211, 236, 195), rgb(79, 221, 186));
+    overflow-x: hidden;
+}
+
 .admin_user {
     position: absolute;
     bottom: 1vw;
