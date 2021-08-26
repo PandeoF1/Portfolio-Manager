@@ -1,6 +1,7 @@
 /* Firefox bar */
 * {
     scrollbar-width: thin;
+    scrollbar-color: #69696b;
   }
   
   /* Chrome, Edge, and Safari bar */
