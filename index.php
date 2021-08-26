@@ -102,19 +102,17 @@ else
 
 	<body>
 		<div class="center">
-			<h1>Identification</h1>
+		<h4 class="mb-4 col-6 mx-auto">Se connecter à l'espace du personnel</h4>
+		<div class="col-6 mx-auto mb-4">
 			<form action=" " method="post">
-				<div class="txt_field">
-					<input type="text" name="identifiant" required>
-					<span></span>
-					<label>E-Mail</label>
-				</div>
-				<div class="txt_field">
-					<input type="password" name="mdp" required>
-					<span></span>
-					<label>Mot de passe</label>
-				</div>
-				<input type="submit" value="Login">
+			<div class="form-group">
+						<label for="identifiant">Identifiant</label>
+						<input type="identifiant" class="form-control" id="identifiant" placeholder="Identifiant" name="identifiant"> </div>
+						<div class="form-group">
+							<label for="mdp">Mot de passe</label>
+							<input type="mdp" class="form-control" id="mdp" placeholder="Mot de passe" name="mdp">
+						</div>
+				<input type="submit" class="btn btn-primary" value="Login">
 				<br><br>
 				<?php if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) { ?>
 					<div class="alert">
