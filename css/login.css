@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(120deg, rgb(211, 236, 195), rgb(79, 221, 186));
+    background: linear-gradient(to right top, #845ec2, #8966bf, #8e6ebd, #9276ba, #967eb7, #a08bbc, #a997c0, #b3a4c5, #c5b8d3, #d8cde1, #eae2f0, #fcf8ff);
     overflow-x: hidden;
 }
 
