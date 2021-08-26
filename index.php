@@ -47,7 +47,7 @@ else
 <?php if (isset($div["/"])) { ?>
 
 	<body style="padding-top: 70px; background-image: url('/images/background.jpg'); background-repeat: no-repeat; background-size: 100%; background-color: #333333;">
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
 	</body>
 
 <?php } ?>
