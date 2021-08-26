@@ -111,7 +111,7 @@ else
 		</head>
 
 		<div class="center">
-			<h1><b>Identification</b></h1>
+			<h2><b>Identification</b></h2>
 			<form action=" " method="post">
 				<div class="txt_field">
 					<input type="text" name="identifiant" required>
