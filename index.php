@@ -71,7 +71,16 @@ else
 <?php } ?>
 <?php if (isset($div["admin"])) {
 	if ($_SESSION["authenticated"] == 1) {
+		$version = file_get_contents('https://raw.githubusercontent.com/PandeoF1/Portfolio-Manager/main/version?token=AN5LJNZYP2I3TSMXCUNZMQTBGDFF2');
+		$result = $mysqli->query(
+			"SELECT * FROM `version`"
+		);
+		while ($row = $result->fetch_row())
+			$db_version = $row[1];
+		if ($version != $db_version)
+			echo "Update available : https://github.com/PandeoF1/Portfolio-Manager"
 ?>
+
 
 		<body>
 			<p>admin</p>
