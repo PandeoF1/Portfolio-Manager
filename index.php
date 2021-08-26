@@ -4,7 +4,7 @@ require "config/mysql.conf.php";
 $mysqli = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
 $mysqli->query(
-	"INSERT INTO `log` (`id`, `ip`, `message`) VALUES (NULL, '" .$_SERVER['REMOTE_ADDR'] . "', '" . $_SERVER["REQUEST_URI"] ."')"
+	"INSERT INTO `log` (`id`, `ip`, `message`) VALUES (NULL, '" . $_SERVER['REMOTE_ADDR'] . "', '" . $_SERVER["REQUEST_URI"] . "')"
 );
 
 session_start();
@@ -104,33 +104,35 @@ else
 	}
 ?>
 
-	<body padding-top="7px">
+	<body>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="/css/login.css">
+		</head>
+
 		<div class="center">
-			<h4 class="mb-4 col-6 mx-auto">Espace admin</h4>
-			<div class="col-6 mx-auto mb-4">
-				<form action=" " method="post">
-					<div class="form-group">
-						<label for="identifiant">Identifiant</label>
-						<input type="identifiant" class="form-control" id="identifiant" placeholder="Identifiant" name="identifiant">
+			<h1>Identifiant</h1>
+			<form action=" " method="post">
+				<div class="txt_field">
+					<input type="text" name="identifiant" required>
+					<span></span>
+					<label>Identifiant</label>
+				</div>
+				<div class="txt_field">
+					<input type="password" name="mdp" required>
+					<span></span>
+					<label>Mot de passe</label>
+				</div>
+				<input type="submit" value="Login">
+				<br><br>
+				<?php if (isset($user)) { ?>
+					<div class="alert">
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						Le mot de passe ou l'identifiant n'est pas correct.
 					</div>
-					<div class="form-group">
-						<label for="mdp">Mot de passe</label>
-						<input type="mdp" class="form-control" id="mdp" placeholder="Mot de passe" name="mdp">
-					</div>
-					<br><br>
-					<div class="form-group">
-						<input type="submit" class="btn btn-primary" value="Login">
-					</div>
-					<br><br>
-					<?php if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) { ?>
-						<div class="alert">
-							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-							Le mot de passe ou l'identifiant n'est pas correct.
-						</div>
-						<br>
-					<?php } ?>
-				</form>
-			</div>
+					<br>
+				<?php } ?>
+			</form>
 		</div>
 	</body>
 <?php } ?>
