@@ -11,14 +11,14 @@
 ## Apache Configuration File :
 ```` 
 <VirtualHost *:80>
-        <Directory /var/www/ticket-manager/>
+        <Directory /var/www/Portfolio-Manager/>
               Options Indexes FollowSymLinks MultiViews
                AllowOverride All
                Require all granted
         </Directory>
 
         ServerAdmin webmaster@localhost
-        DocumentRoot /var/www/ticket-manager/
+        DocumentRoot /var/www/Portfolio-Manager/
         ServerName domain
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
