@@ -6,6 +6,7 @@
 
 	$result = $mysqli->query("SELECT * FROM test");
 	$row	= $result->fetch_row();
+	if ()
 	foreach ($row as $row_)
 		echo $row_;
 
