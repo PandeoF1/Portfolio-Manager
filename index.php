@@ -22,11 +22,11 @@ echo $_SERVER["REQUEST_URI"];
 
 <head>
 	<meta charset="utf-8">
-	<title>Test</title>
+	<title>Portfolio PLANQUE Clément</title>
 </head>
 
 <body>
-	<p>Testeuhhh</p>
+	<p>Salut</p>
 </body>
 
 </html>
