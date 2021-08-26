@@ -33,6 +33,8 @@ else
 <head>
 	<meta charset="utf-8">
 	<title><?php echo "Portfolio PLANQUE Clement" ?></title>
+	<link src="style/bootstrap.min.css" rel="stylesheet" />
+	<script src="style/bootstrap.bundle.min.js"></script>
 </head>
 <?php if ($div["/"]) { ?>
 
