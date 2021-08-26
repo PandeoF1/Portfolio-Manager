@@ -36,7 +36,7 @@ else
 	<link src="style/bootstrap.min.css" rel="stylesheet" />
 	<script src="style/bootstrap.bundle.min.js"></script>
 </head>
-<?php if ($div["/"]) { ?>
+<?php if (isset($div["/"])){ ?>
 
 	<body>
 		<div class="container">
@@ -45,7 +45,7 @@ else
 		</div>
 	</body>
 <?php } ?>
-<?php if ($div["admin"]) {
+<?php if (isset($div["admin"])) {
 	if ($_SESSION["authenticated"] == 1) {
 ?>
 
@@ -59,7 +59,7 @@ else
 }
 ?>
 
-<?php if ($div["login"]) {
+<?php if (isset($div["login"])) {
 	if ($_SESSION["authenticated"] == 1)
 		header("location: /admin/");
 	if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) {
@@ -97,7 +97,7 @@ else
 				</div>
 				<input type="submit" value="Login">
 				<br><br>
-				<?php if ($_POST["identifiant"] && $_POST["mdp"]) { ?>
+				<?php if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) { ?>
 					<div class="alert">
 						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 						Le mot de passe ou l'identifiant n'est pas correct.
@@ -109,7 +109,7 @@ else
 	</body>
 <?php } ?>
 
-<?php if ($div["error"]) { ?>
+<?php if (isset($div["error"])) { ?>
 
 	<body>
 		<p>Page not found</p>
