@@ -56,8 +56,8 @@ else
 					<a href="/files/CV.pdf">CV</a>
 					<div class="vl"></div>
 					<a href="/contact">Contact</a>
+				</div>
 			</nav>
-		</div>
 		</div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</body>
