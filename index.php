@@ -103,7 +103,7 @@ else
 
 	<body>
 		<div class="center">
-			<h4 class="mb-4 col-6 mx-auto">Se connecter à l'espace du personnel</h4>
+			<h4 class="mb-4 col-6 mx-auto">Espace admin</h4>
 			<div class="col-6 mx-auto mb-4">
 				<form action=" " method="post">
 					<div class="form-group">
