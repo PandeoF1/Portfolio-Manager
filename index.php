@@ -127,6 +127,7 @@ else
 					<?php } ?>
 				</form>
 			</div>
+		</div>
 	</body>
 <?php } ?>
 
