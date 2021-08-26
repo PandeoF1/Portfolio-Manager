@@ -48,9 +48,10 @@ else
 
 	<body style="padding-top: 70px; background-image: url('/images/background.webp'); background-repeat: no-repeat; background-size: 100%; background-color: #333333;">
 		<nav>
-			<p style="color: #16A7F2">#16A7F2</p>
+			<b><p style="color: #16A7F2">#16A7F2</p></b>
 		</nav>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<b><p style="color: #16A7F2">#16A7F2</p></b>
 	</body>
 
 <?php } ?>
