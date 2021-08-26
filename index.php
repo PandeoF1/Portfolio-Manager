@@ -84,12 +84,11 @@ else
 		header("location: /admin/");
 	if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) {
 		$email = $_POST["identifiant"];
-		$pass = $_POST["mdp"] . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgFDsgfd";
+		$pass = $_POST["mdp"] . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgFDsgfd";
 		$result = $mysqli->query(
 			"SELECT * FROM `account` WHERE email = '$email'"
 		);
 		while ($row = $result->fetch_row()) {
-			echo "Database : " . $row[2] . "<br>";
 			echo password_hash($pass, PASSWORD_DEFAULT) . "<br>";
 			if (password_verify($pass, $row[2])) {
 				$_SESSION["authenticated"] = 1;
