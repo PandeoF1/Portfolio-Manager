@@ -57,10 +57,12 @@ else
 				<a href="/contact">Contact</a>
 			</nav>
 		</div>
-		<h2 style="margin-top: 3.2em;">About me :</h2>
-		<p>
-			Hello
-		</p>
+		<div style="margin-top: 3.2em; margin: auto; width: 71%;">
+			<h2>About me :</h2>
+			<p>
+				Hello
+			</p>
+		</div>
 	</body>
 
 <?php } ?>
