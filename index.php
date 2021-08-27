@@ -53,8 +53,6 @@ else
 				<a href="/projects">Projects</a>
 				<a>|</a>
 				<a href="/files/CV.pdf">CV</a>
-				<a>|</a>
-				<a href="/contact">Contact</a>
 			</nav>
 		</div>
 		<div style="margin-top: 3.2em; margin-left:auto; margin-right:auto; width: 71%;">
@@ -62,6 +60,11 @@ else
 			<p>
 				Hello, my name is Planque Clément. I'm a french student in IT sector...
 			</p>
+		</div>
+		<div style="background-color: #333333; width: 100%;">
+			<footer>
+				<h4 style="color: aliceblue;">Contact :</h4>
+			</footer>
 		</div>
 	</body>
 
