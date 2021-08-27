@@ -1,6 +1,8 @@
-const form = document.getElementById("footer");
+const footer = document.getElementById("footer");
 function displaychange() {
-    form.style.display = form.style.display === "none"
-    ? 'block'
-    : 'none';
+  if (footer.style.display === "none") {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
 }
