@@ -43,9 +43,12 @@ else
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/scrollbar.css" rel="stylesheet">
-	<link href="/css/index.css" rel="stylesheet">
 </head>
 <?php if (isset($div["/"])) { ?>
+
+	<head>
+		<link href="/css/index.css" rel="stylesheet">
+	</head>
 
 	<body>
 		<div class="navdiv">
@@ -168,7 +171,7 @@ else
 		<link rel="stylesheet" href="assets/css/untitled.css">
 	</head>
 
-	<body id="page-top" style="background-color: black;">
+	<body id="page-top">
 		<div id="wrapper">
 
 
