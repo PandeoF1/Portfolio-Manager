@@ -1,6 +1,6 @@
 .navdir {
     width: 100%;
-    position: sticky;
+    position: fixed;
     align-items: center;
 }
 
