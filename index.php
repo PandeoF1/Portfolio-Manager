@@ -63,19 +63,21 @@ else
 			<p class="text">
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 			</p>
-			<button onclick="displaychange();" class="btn btn-primary" title="Contacts">
-				<img id="up" src="/images/footer-arrow-up.webp"/>
-				<img id="down" src="/images/footer-arrow-down.webp"/>
-			</button>
 		</div>
-		<footer id="footer">
-			<div class="roww">
-				<h4 style="color: aliceblue;">Contact :</h4>
-				<a href="mailto:admin@clementplanque.fr" target="_blank">admin@clementplanque.fr</a>
-				<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/" target="_blank">LinkedIn</a>
-				<p>© PLANQUE Clément - 2021</p>
-			</div>
-		</footer>
+		<div>
+			<button onclick="displaychange();" class="footer-btn" title="Contacts">
+				<img id="up" src="/images/footer-arrow-up.webp" />
+				<img id="down" src="/images/footer-arrow-down.webp" />
+			</button>
+			<footer id="footer">
+				<div class="roww">
+					<h4 style="color: aliceblue;">Contact :</h4>
+					<a href="mailto:admin@clementplanque.fr" target="_blank">admin@clementplanque.fr</a>
+					<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/" target="_blank">LinkedIn</a>
+					<p>© PLANQUE Clément - 2021</p>
+				</div>
+			</footer>
+		</div>
 	</body>
 
 <?php } ?>

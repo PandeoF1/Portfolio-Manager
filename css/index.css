@@ -55,6 +55,11 @@ footer {
     display: none;
 }
 
+.footer-btn {
+    width: 15%;
+    margin: auto;
+}
+
 #up {
     display: block;
 }
