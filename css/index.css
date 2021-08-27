@@ -57,17 +57,6 @@ footer {
 
 #hover:hover footer {
     display: block;
-    -webkit-animation: slide-up .3s ease-out;
-    -moz-animation: slide-up .3s ease-out;
-}
-
-@-webkit-keyframes slide-up {
-      0% { opacity: 0; -webkit-transform: translateY(+100%); }   
-    100% { opacity: 1; -webkit-transform: translateY(0); }
-}
-@-moz-keyframes slide-up {
-      0% { opacity: 0; -moz-transform: translateY(+100%); }   
-    100% { opacity: 1; -moz-transform: translateY(0); }
 }
 
 .roww a {
