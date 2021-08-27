@@ -57,7 +57,7 @@ else
 				<a href="/contact">Contact</a>
 			</nav>
 		</div>
-		<div style="margin-top: 3.2em; margin: auto; width: 71%;">
+		<div style="margin-top: 3.2em; margin-left:auto; margin-right:auto; width: 71%;">
 			<h2>About me :</h2>
 			<p>
 				Hello
