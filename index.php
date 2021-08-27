@@ -49,7 +49,7 @@ else
 
 	<body>
 		<div style="width: 100%; position: fixed;">
-			<nav style="text-align: center; position: relative;">
+			<nav class="navbar" style="text-align: center; position: relative;">
 				<a href="/projects">Projects</a>
 				<a>|</a>
 				<a href="/files/CV.pdf">CV</a>
@@ -62,7 +62,7 @@ else
 			</p>
 		</div>
 		<footer>
-			<div class="row">
+			<div class="roww">
 				<h4 style="color: aliceblue;">Contact :</h4>
 				<a href="mailto:admin@clementplanque.fr">admin@clementplanque.fr</a>
 				<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/">LinkedIn</a>

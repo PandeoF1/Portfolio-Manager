@@ -1,4 +1,4 @@
-navbar a {
+.navbar a {
     color: #16A7F2;
     text-align: center;
     text-decoration: none;
@@ -40,7 +40,7 @@ footer {
     background-color: #333333;
 }
 
-.row a {
+.roww a {
     color: #FFFFFF;
     text-decoration: none;
     font-family: Arial Black;
