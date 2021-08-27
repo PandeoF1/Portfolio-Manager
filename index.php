@@ -62,10 +62,9 @@ else
 			<h2>About me :</h2>
 			<p class="text">
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
+			<button class="footer-btn" class="btn btn-primary">Click me !</button>
 		</div>
-		<button class="footer-btn">
 		<footer>
 			<div class="roww">
 				<h4 style="color: aliceblue;">Contact :</h4>
