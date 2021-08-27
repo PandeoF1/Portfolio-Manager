@@ -48,6 +48,7 @@ else
 
 	<head>
 		<link href="/css/index.css" rel="stylesheet">
+		<script src="/js/footer.js"></script>
 	</head>
 
 	<body>
@@ -64,6 +65,7 @@ else
 				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
 		</div>
+		<button class="footer-btn">
 		<footer>
 			<div class="roww">
 				<h4 style="color: aliceblue;">Contact :</h4>
