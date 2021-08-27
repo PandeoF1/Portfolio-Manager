@@ -58,14 +58,23 @@ footer {
 .footer-btn {
     width: 15%;
     margin: auto;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 #up {
+    width: 95%;
     display: block;
+    border: none;
+    position: relative;
 }
 
 #down {
+    width: 95%;
     display: none;
+    border: none;
+    position: relative;
 }
 
 .roww a {
