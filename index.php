@@ -63,7 +63,10 @@ else
 			<p class="text">
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 			</p>
-			<button onclick="displaychange();" class="btn btn-primary" title="Contacts"/>
+			<button onclick="displaychange();" class="btn btn-primary" title="Contacts">
+				<img id="up" src="/images/footer-arrow-up.webp"/>
+				<img id="down" src="/images/footer-arrow-down.webp"/>
+			</button>
 		</div>
 		<footer id="footer">
 			<div class="roww">

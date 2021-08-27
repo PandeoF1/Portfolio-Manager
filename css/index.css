@@ -55,6 +55,14 @@ footer {
     display: none;
 }
 
+#up {
+    display: block;
+}
+
+#down {
+    display: none;
+}
+
 .roww a {
     color: #FFFFFF;
     text-decoration: none;
