@@ -1,5 +1,5 @@
 let box = document.getElementById('footer'),
-    btn = document.getElementById('footer-btn');
+    btn = document.querySelector('footer-btn');
 
 btn.addEventListener('click', function () {
   
