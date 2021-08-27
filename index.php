@@ -57,12 +57,16 @@ else
 		</div>
 		<div style="margin-top: 3.2em; margin-left:auto; margin-right:auto; width: 71%;">
 			<h2>About me :</h2>
-			<p>
+			<p class="text">
 				Hello, my name is Planque Clément. I'm a french student in IT sector...
 			</p>
 		</div>
 		<footer>
-			<h4 style="color: aliceblue;">Contact :</h4>
+			<div class="row">
+				<h4 style="color: aliceblue;">Contact :</h4>
+				<a href="mailto:admin@clementplanque.fr">admin@clementplanque.fr</a>
+				<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/">LinkedIn</a>
+			</div>
 		</footer>
 	</body>
 
