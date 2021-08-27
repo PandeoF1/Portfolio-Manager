@@ -40,7 +40,7 @@ footer {
     background-color: #333333;
 }
 
-navbar a {
+.row a {
     color: #FFFFFF;
     text-decoration: none;
     font-family: Arial Black;
