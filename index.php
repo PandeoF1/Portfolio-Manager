@@ -62,7 +62,7 @@ else
 			<p class="text">
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 			</p>
-			<button onclick="document.getElementById('footer').style.display = 'block';" class="btn btn-primary">Click me !</button>
+			<button onclick="displaychange();" class="btn btn-primary">Click me !</button>
 		</div>
 		<footer id="footer">
 			<div class="roww">
