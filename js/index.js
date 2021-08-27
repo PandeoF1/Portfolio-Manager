@@ -4,7 +4,7 @@ function displaychange() {
         document.getElementById("footer").style.display = "block";
         document.getElementById("up").style.display = "none";
         document.getElementById("down").style.display = "block";
-        document.getElementById("footer-div").style.bottom = "3.5rem";
+        document.getElementById("footer-div").style.bottom = "76px";
     } else {
         document.getElementById("footer").style.display = "none";
         document.getElementById("up").style.display = "block";
