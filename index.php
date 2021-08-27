@@ -60,7 +60,7 @@ else
 		<div style="margin-top: 3.2em; margin-left:auto; margin-right:auto; width: 71%;">
 			<h2>About me :</h2>
 			<p>
-				Hello
+				Hello, my name is Planque Clément. I'm a french student in IT sector...
 			</p>
 		</div>
 	</body>
