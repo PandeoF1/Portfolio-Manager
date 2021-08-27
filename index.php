@@ -51,7 +51,7 @@ else
 		<div class="navdiv">
 			<nav class="navbar">
 				<a href="/projects">Projects</a>
-				<a style="width: 15px;">|</a>
+				<a style="width: fit-content;">|</a>
 				<a href="/files/CV.pdf">CV</a>
 			</nav>
 		</div>
