@@ -1,4 +1,9 @@
-a {
+.navbar {
+    text-align: center;
+    position: absolute;
+}
+
+.navbar a {
     color: #16A7F2;
     text-align: center;
     text-decoration: none;

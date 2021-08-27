@@ -49,7 +49,7 @@ else
 
 	<body>
 		<div style="width: 100%; position: fixed; align-items: center;">
-			<nav class="navbar" style="text-align: center; position: relative;">
+			<nav class="navbar">
 				<a href="/projects">Projects</a>
 				<a>|</a>
 				<a href="/files/CV.pdf">CV</a>
