@@ -48,7 +48,6 @@ else
 
 	<head>
 		<link href="/css/index.css" rel="stylesheet">
-		<script src="/js/footer.js"></script>
 	</head>
 
 	<body>
@@ -63,7 +62,7 @@ else
 			<p class="text">
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 			</p>
-			<button class="btn btn-primary">Hover me !</button>
+			<button id="hover" class="btn btn-primary">Hover me !</button>
 		</div>
 		<footer>
 			<div class="roww">
