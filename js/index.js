@@ -1,3 +1,7 @@
 function displaychange() {
-    document.getElementById("footer").style.display = document.getElementById("footer").style.display === "none" ? 'block' : 'none';
-}
+    if (document.getElementById("footer").style.display === "none") {
+      document.getElementById("footer").style.display = "block";
+    } else {
+      document.getElementById("footer").style.display = "none";
+    }
+  }
