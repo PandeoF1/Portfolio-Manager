@@ -1,8 +1,6 @@
-function displaychange() {
-    var x = document.getElementById("footer").style.display = 'none';
-    if (x.style.display === "none") {
-     x.style.display = "block";
-   } else {
-     x.style.display = "none";
-   }
- }
+const form = document.getElementById("footer");
+function myFunction() {
+    form.style.display = form.style.display === "none"
+    ? 'block'
+    : 'none';
+}
