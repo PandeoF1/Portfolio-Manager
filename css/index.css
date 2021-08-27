@@ -55,10 +55,6 @@ footer {
     display: none;
 }
 
-#hover:hover footer {
-    display: block;
-}
-
 .roww a {
     color: #FFFFFF;
     text-decoration: none;

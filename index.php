@@ -62,9 +62,9 @@ else
 			<p class="text">
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 			</p>
-			<button id="hover" class="btn btn-primary">Hover me !</button>
+			<button onclick="document.getElementById('footer').setAttribute('display', 'block')" class="btn btn-primary">Hover me !</button>
 		</div>
-		<footer>
+		<footer id="footer">
 			<div class="roww">
 				<h4 style="color: aliceblue;">Contact :</h4>
 				<a href="mailto:admin@clementplanque.fr" target="_blank">admin@clementplanque.fr</a>
