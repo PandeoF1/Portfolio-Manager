@@ -64,7 +64,7 @@ else
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 			</p>
 		</div>
-		<div>
+		<div class="footer-div">
 			<button onclick="displaychange();" class="footer-btn" title="Contacts">
 				<img id="up" src="/images/footer-arrow-up.webp" />
 				<img id="down" src="/images/footer-arrow-down.webp" />
