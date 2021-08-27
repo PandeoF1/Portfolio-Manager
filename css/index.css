@@ -52,6 +52,9 @@ footer {
     padding-bottom: 1.4rem;
     padding-left: 17px;
     background-color: #2e2e2e;
+    transition: opacity 0.5s linear;  
+    transform:translate(0);
+    opacity: 1;
 }
 
 .roww a {
@@ -71,4 +74,9 @@ footer {
     float: right;
     margin-right: 24px;
     margin-bottom: 0;
+}
+
+.hidden {  
+    transform:translate(9999px);
+    opacity: 0;  
 }
