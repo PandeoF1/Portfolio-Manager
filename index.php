@@ -64,8 +64,8 @@ else
 		<footer>
 			<div class="roww">
 				<h4 style="color: aliceblue;">Contact :</h4>
-				<a href="mailto:admin@clementplanque.fr">admin@clementplanque.fr</a>&nbsp;&nbsp;
-				<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/">LinkedIn</a>
+				<a href="mailto:admin@clementplanque.fr" target="_blank">admin@clementplanque.fr</a>&nbsp;&nbsp;
+				<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/" target="_blank">LinkedIn</a>
 			</div>
 		</footer>
 	</body>
