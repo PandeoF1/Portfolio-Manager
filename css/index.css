@@ -32,28 +32,10 @@ p {
 
 footer {
     position: absolute;
+    bottom: 0;
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1.4rem;
     padding-left: 17px;
     background-color: #333333;
-    bottom: -3.5rem;
-    transition: .4s;
-}
-
-footer.active {
-    top: 0;
-}
-
-footer.toggle-btn {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-}
-
-.toggle-btn span {
-    width: 4px;
-    height: 4px;
-    display: block;
-    margin-top: 4px;
 }

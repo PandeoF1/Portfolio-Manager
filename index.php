@@ -44,7 +44,6 @@ else
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/scrollbar.css" rel="stylesheet">
 	<link href="/css/index.css" rel="stylesheet">
-	<script src="/js/index.js"></script>
 </head>
 <?php if (isset($div["/"])) { ?>
 
@@ -62,10 +61,8 @@ else
 				Hello, my name is Planque Clément. I'm a french student in IT sector...
 			</p>
 		</div>
-		<footer id="footer">
-			<div class="toggle-btn" onclick="show()">
-				<h4 style="color: aliceblue;">Contact :</h4>
-			</div>
+		<footer>
+			<h4 style="color: aliceblue;">Contact :</h4>
 		</footer>
 	</body>
 
