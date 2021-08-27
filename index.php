@@ -48,7 +48,7 @@ else
 <?php if (isset($div["/"])) { ?>
 
 	<body>
-		<div style="width: 100%; position: fixed; padding-bottom: 2rem;">
+		<div style="width: 100%; position: fixed; margin-bottom: 2rem;">
 			<nav style="text-align: center; position: relative;">
 				<a href="/projects">Projects</a>
 				<a>|</a>
