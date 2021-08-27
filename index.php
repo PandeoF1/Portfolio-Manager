@@ -47,8 +47,8 @@ else
 </head>
 <?php if (isset($div["/"])) { ?>
 
-	<body style="padding-top: 21px; background-image: url('/images/background.webp'); background-repeat: no-repeat; background-size: 100%; background-color: #353235;">
-		<div style="width: 100%; position: fixed;">
+	<body>
+		<div style="width: 100%; position: fixed; padding-bottom: 75px;">
 			<nav style="text-align: center; position: relative;">
 				<a href="/projects">Projects</a>
 				<a>|</a>
@@ -57,7 +57,10 @@ else
 				<a href="/contact">Contact</a>
 			</nav>
 		</div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<h2>About me :</h2>
+		<p>
+			Hello
+		</p>
 	</body>
 
 <?php } ?>
