@@ -54,17 +54,18 @@ else
 				<a href="/files/CV.pdf">CV</a>
 			</nav>
 		</div>
-		<div style="margin-top: 3.2em; margin-left:auto; margin-right:auto; width: 71%;">
+		<div style="margin-top: 3.8em; margin-left:auto; margin-right:auto; width: 71%;">
 			<h2>About me :</h2>
 			<p class="text">
-				Hello, my name is Planque Clément. I'm a french student in IT sector...
+				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 			</p>
 		</div>
 		<footer>
 			<div class="roww">
 				<h4 style="color: aliceblue;">Contact :</h4>
-				<a href="mailto:admin@clementplanque.fr" target="_blank">admin@clementplanque.fr</a>&nbsp;&nbsp;
+				<a href="mailto:admin@clementplanque.fr" target="_blank">admin@clementplanque.fr</a>
 				<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/" target="_blank">LinkedIn</a>
+				<p style="text-align: right;">© PLANQUE Clément - 2021</p>
 			</div>
 		</footer>
 	</body>
