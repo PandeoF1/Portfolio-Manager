@@ -1,7 +1,7 @@
 let box = document.getElementById('footer'),
     btn = document.querySelector('footer-btn');
 
-showhide() {
+function showhide() {
   
   if (box.classList.contains('hidden')) {
     box.classList.remove('hidden');
