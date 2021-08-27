@@ -4,9 +4,11 @@ function displaychange() {
         document.getElementById("footer").style.display = "block";
         document.getElementById("up").style.display = "none";
         document.getElementById("down").style.display = "block";
+        document.getElementById("footer-div").style.bottom = "3.5rem";
     } else {
         document.getElementById("footer").style.display = "none";
         document.getElementById("up").style.display = "block";
         document.getElementById("down").style.display = "none";
+        document.getElementById("footer-div").style.bottom = "0";
     }
 }

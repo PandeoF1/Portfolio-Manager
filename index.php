@@ -65,7 +65,7 @@ else
 				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
 		</div>
-		<div class="footer-div">
+		<div id="footer-div" class="footer-div">
 			<button onclick="displaychange();" class="footer-btn" title="Contacts">
 				<img id="up" src="/images/footer-arrow-up.webp" />
 				<img id="down" src="/images/footer-arrow-down.webp" />
