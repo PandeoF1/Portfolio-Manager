@@ -55,7 +55,7 @@ footer {
     display: none;
 }
 
-footer:hover {
+button:hover footer {
     display: block;
     
     -webkit-animation: slide-up .3s ease-out;
