@@ -168,7 +168,7 @@ else
 		<link rel="stylesheet" href="assets/css/untitled.css">
 	</head>
 
-	<body id="page-top">
+	<body id="page-top" style="background-color: black;">
 		<div id="wrapper">
 
 
