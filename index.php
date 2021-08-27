@@ -65,7 +65,7 @@ else
 				<h4 style="color: aliceblue;">Contact :</h4>
 				<a href="mailto:admin@clementplanque.fr" target="_blank">admin@clementplanque.fr</a>
 				<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/" target="_blank">LinkedIn</a>
-				<p style="text-align: right; padding-right: 24px;">© PLANQUE Clément - 2021</p>
+				<p>© PLANQUE Clément - 2021</p>
 			</div>
 		</footer>
 	</body>
