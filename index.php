@@ -60,7 +60,7 @@ else
 		</div>
 		<div style="margin-top: 3.8em; margin-left:auto; margin-right:auto; width: 71%;">
 			<p class="text">
-				<h2>About me :</h2>
+				<span class="span-h2">About me :</span>
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
