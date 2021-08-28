@@ -42,10 +42,11 @@ p.text {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 15px;
+    display:inline;
 }
 
 p h2 {
-    display:inline
+    display:inline;
 }
 
 footer {
