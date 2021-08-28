@@ -44,6 +44,10 @@ p.text {
     border-radius: 15px;
 }
 
+p h2 {
+    display:inline
+}
+
 footer {
     position: fixed;
     bottom: 0;
