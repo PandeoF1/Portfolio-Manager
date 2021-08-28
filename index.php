@@ -59,8 +59,8 @@ else
 			</nav>
 		</div>
 		<div style="margin-top: 3.8em; margin-left:auto; margin-right:auto; width: 71%;">
-			<h2>About me :</h2>
 			<p class="text">
+			<h2>About me :</h2>
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
 				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
@@ -75,6 +75,7 @@ else
 					<h4 style="color: aliceblue;">Contact :</h4>
 					<a href="mailto:admin@clementplanque.fr" target="_blank">admin@clementplanque.fr</a>
 					<a href="https://www.linkedin.com/in/cl%C3%A9ment-p-14a7a312a/" target="_blank">LinkedIn</a>
+					<a href="https://www.tisi-fr.com/board/member.php?action=profile&uid=187" target="_blank" title="IT monitoring">TISI blog</a>
 					<p>© PLANQUE Clément - 2021</p>
 				</div>
 			</footer>
