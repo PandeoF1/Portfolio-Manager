@@ -62,7 +62,6 @@ else
 			<p class="text">
 				<span class="span-h2">About me :</span>
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
 		</div>
 		<div id="footer-div" class="footer-div">
