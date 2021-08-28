@@ -67,7 +67,7 @@ footer {
 
 .footer-div {
     bottom: 0;
-    position: fixed;
+    position: absolute;
 }
 
 .footer-btn {
