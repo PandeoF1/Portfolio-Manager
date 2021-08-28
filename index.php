@@ -62,13 +62,10 @@ else
 			<p class="text">
 				<span class="span-h2">About me :</span>
 				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
+				<br><br><br><br><br><br><br><br>
 			</p>
 		</div>
 		<div id="footer-div" class="footer-div">
-			<button onclick="displaychange();" class="footer-btn" title="Contacts">
-				<img id="up" src="/images/footer-arrow-up.webp" />
-				<img id="down" src="/images/footer-arrow-down.webp" />
-			</button>
 			<footer id="footer">
 				<div class="roww">
 					<h4 style="color: aliceblue;">Contact :</h4>
@@ -78,6 +75,10 @@ else
 					<p>© PLANQUE Clément - 2021</p>
 				</div>
 			</footer>
+			<button onclick="displaychange();" class="footer-btn" title="Contacts">
+				<img id="up" src="/images/footer-arrow-up.webp" />
+				<img id="down" src="/images/footer-arrow-down.webp" />
+			</button>
 		</div>
 	</body>
 
