@@ -51,7 +51,7 @@ p .span-h2 {
     line-height: 1.2;
     font-size: calc(1.325rem + .9vw);
     font-weight: bold;
-    display: block;
+    margin-right: auto;
 }
 
 footer {
