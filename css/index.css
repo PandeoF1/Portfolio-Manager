@@ -39,7 +39,10 @@ p.text {
     padding-bottom: 12px;
     padding-left: 17px;
     padding-right: 17px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 24px;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 15px;
 }
