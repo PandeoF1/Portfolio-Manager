@@ -166,7 +166,13 @@ else
 		<link rel="stylesheet" href="/css/projects.css">
 	</head>
 	<body>
-		<p>Test</p>
+		<div class="navdiv">
+			<nav class="navbar">
+				<a href="/">Home</a>
+				<a href="/files/CV.pdf">CV</a>
+			</nav>
+		</div>
+		<p class="text">Test</p>
 	</body>
 
 <?php } ?>
