@@ -21,6 +21,13 @@ p.text {
     border-radius: 15px;
 }
 
+p a {
+    color: inherit;
+    transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+    border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+}
+
 p .span-h2 {
     margin-top: 0;
     margin-bottom: .5rem;
