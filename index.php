@@ -160,7 +160,11 @@ else
 		</div>
 	</body>
 <?php } ?>
-<?php if (isset($div["projects"])) { ?>
+<?php if (isset($div["projects"])) {
+	$result = $mysqli->query(
+		"SELECT * FROM `projects`"
+	);
+?>
 
 	<head>
 		<link rel="stylesheet" href="/css/projects.css">
@@ -174,15 +178,16 @@ else
 			</nav>
 		</div>
 		<div style="margin-top: 3.8em; margin-left:auto; margin-right:auto; width: 71%;">
-			<p class="text">
-				<span class="span-h2">This website :</span>
-				I made this website with my friend <a href="https://pandeo.fr/">NARD Theo</a>. This website is fully automated with PHP scripts, when I want to add an article, I have a text editor and a publish button which send all here. My friend did all the backend.
-			</p>
+			<?php
 
-			<p class="text">
-				<span class="span-h2">Test :</span>
-				Test
-			</p>
+			while ($row = $result->fetch_row())
+			{
+				echo "<p class='text'>";
+				echo "<span class='span-h2'>$row[1]</span>";
+				echo $row[2];
+				echo "</p>";
+			}
+			?>
 		</div>
 	</body>
 
