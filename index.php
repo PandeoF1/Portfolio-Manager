@@ -162,7 +162,12 @@ else
 <?php } ?>
 <?php if (isset($div["projects"])) { ?>
 
-	<p> lul </p>
+	<head>
+		<link rel="stylesheet" href="/css/projects.css">
+	</head>
+	<body>
+		<p>Test</p>
+	</body>
 
 <?php } ?>
 <?php if (isset($div["error"])) { ?>
