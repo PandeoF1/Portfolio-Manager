@@ -178,6 +178,11 @@ else
 				<span class="span-h2">This website :</span>
 				I made this website with my friend <a href="https://pandeo.fr/">NARD Theo</a>. This website is fully automated with PHP scripts, when I want to add an article, I have a text editor and a publish button which send all here. My friend did all the backend.
 			</p>
+
+			<p class="text">
+				<span class="span-h2">Test :</span>
+				Test
+			</p>
 		</div>
 	</body>
 
