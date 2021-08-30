@@ -1,6 +1,6 @@
 body {
     background-image: url('/images/background-2.webp');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 100%;
     padding-top: 21px;
 }
