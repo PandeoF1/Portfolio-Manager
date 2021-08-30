@@ -1,20 +1,22 @@
 /* Firefox bar */
+
 * {
-    scrollbar-width: thin;
-    scrollbar-color: #69696b;
-  }
-  
-  /* Chrome, Edge, and Safari bar */
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: #353235;
-    border-radius: 20px;
-    border: 3rem solid #69696b;
-  }
+  scrollbar-width: thin;
+  scrollbar-color: #69696b;
+}
+
+/* Chrome, Edge, and Safari bar */
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #353235;
+  border-radius: 20px;
+  border: 3rem solid #69696b;
+}
