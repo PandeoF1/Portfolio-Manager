@@ -174,7 +174,10 @@ else
 			</nav>
 		</div>
 		<div style="margin-top: 3.8em; margin-left:auto; margin-right:auto; width: 71%;">
-			<p class="text">Test</p>
+			<p class="text">
+				<span class="span-h2">This website :</span>
+				I made this website with my friend <a href="https://pandeo.fr/">NARD Theo</a>. This website is fully automated with PHP scripts, when I want to add an article, I have a text editor and a publish button which send all here. My friend did all the backend.
+			</p>
 		</div>
 	</body>
 
