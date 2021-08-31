@@ -10,6 +10,8 @@
     left: 37%;
     right: 37%;
     width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar a {
