@@ -284,7 +284,7 @@ else
 		<div class="container">
 			<div class="row mb-4">
 				<div class="col-xl-6">
-					<div class="text-md-left dataTables_filter" id="dataTable_filter"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search" name="search_input" id="search_input" onkeyup="fulkter()"></label></div>
+					<div class="text-md-left dataTables_filter" id="dataTable_filter" style="float: right;"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search" name="search_input" id="search_input" onkeyup="fulkter()"></label></div>
 				</div>
 				<div class="col-xl-12">
 					<a type="submit" href="/admin" class="btn btn-outline-primary" style="float: right;">Return</a>
@@ -299,7 +299,7 @@ else
 						<th>Action</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody id="table_body">
 					<?php
 					if (isset($_POST["id"])) {
 						$result = $mysqli->query(
