@@ -85,6 +85,12 @@ else
 <?php } ?>
 <?php if (isset($div["admin"])) {
 	if ($_SESSION["authenticated"] == 1) {
+		if($_POST["title"])
+		{
+			$result = $mysqli->query(
+				"INSERT INTO `projects` (`id`, `title`, `text`) VALUES (NULL, '" .$_POST["title"]. "', '" .$_POST["content"]. "') "
+			);
+		}
 		$version = file_get_contents('https://raw.githubusercontent.com/PandeoF1/Portfolio-Manager/main/version?token=AN5LJNZYP2I3TSMXCUNZMQTBGDFF2');
 		$result = $mysqli->query(
 			"SELECT * FROM `version`"
