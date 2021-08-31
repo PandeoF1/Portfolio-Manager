@@ -95,10 +95,24 @@ else
 			echo "Update available : https://github.com/PandeoF1/Portfolio-Manager"
 ?>
 
+		<head>
+			<meta charset="utf-8">
+			<title>Add article</title>
+			<script src="/css/ckeditor/ckeditor.js"></script>
+		</head>
 
 		<body>
-			<p>admin</p>
+			<form action="" method="post">
+				<input type="text" id="title">
+				<div id="content">
+				</div>
+				<button type="submit">Publish article</button>
+			</form>
+			<script>
+				CKEDITOR.replace('content');
+			</script>
 		</body>
+
 <?php
 	} else {
 		header("location: /login/");
@@ -180,8 +194,7 @@ else
 		<div style="margin-top: 3.8em; margin-left:auto; margin-right:auto; width: 71%;">
 			<?php
 
-			while ($row = $result->fetch_row())
-			{
+			while ($row = $result->fetch_row()) {
 				echo "<p class='text'>";
 				echo "<span class='span-h2'>$row[1]</span>";
 				echo $row[2];
