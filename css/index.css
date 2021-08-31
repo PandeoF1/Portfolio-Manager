@@ -70,7 +70,7 @@ footer {
 
 .footer-div {
     bottom: 0;
-    position: fixed;
+    position: sticky;
     z-index: 10;
 }
 
