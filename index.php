@@ -284,6 +284,7 @@ else
 						<th>Id</th>
 						<th>Title</th>
 						<th>Message</th>
+						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -300,20 +301,14 @@ else
 						echo "<form action='' method='POST'>
 						<input type='text' name='id' hidden value='" . $row[0] . "'>";
 						echo "<tr>
-							<th>ID</th>
-							<td>" . $row[0] . "</td>
-							</tr>";
-						echo "<tr>
-							<th>Titre</th>
-							<td>" . $row[1] . "</td>
-							</tr>";
-						echo "<tr>
-							<th>Message</th>
-							<td>" . $row[2] . "</td>
-							</tr>";
-						echo "<tr>
+							<td>" . $row[0] . "</td>";
+						echo "<td>" . $row[1] . "</td>>";
+						echo "<td>" . $row[2] . "</td>";
+						echo "<td>
 							<button type='submit' class='btn btn-primary'>🗑️</button>
-							</form>";
+							</form>
+							</td>
+							</tr>";
 					}
 					?>
 				</tbody>
