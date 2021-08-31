@@ -23,7 +23,7 @@ while ($row = $result->fetch_row())
 
 if ($_SERVER["REQUEST_URI"] == "/")
 	$div["/"] = 1;
-else if ($url_parse[0] == "admin" || $url_parse[0] == "error" || $url_parse[0] == "login" || $url_parse[0] == "projects")
+else if ($url_parse[0] == "admin" || $url_parse[0] == "error" || $url_parse[0] == "login" || $url_parse[0] == "projects" || $url_parse[0] == "view_articles")
 	$div[$url_parse[0]] = 1;
 else
 	$div["error"] = 1;
@@ -262,6 +262,12 @@ else
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
 		<script src="assets/js/theme.js"></script>
 	</body>
+<?php } ?>
+
+<?php if (isset($div["view_articles"])) { ?>
+
+	<p>Test</p>
+
 <?php } ?>
 
 </html>
