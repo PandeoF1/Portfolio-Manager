@@ -72,14 +72,13 @@ footer {
     bottom: 0;
     position: fixed;
     z-index: 10;
-    height: 3.3%;
+    height: fit-content;
 }
 
 .footer-btn {
     width: 7%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     border: none;
     cursor: pointer;
     background-color: transparent;
@@ -88,8 +87,6 @@ footer {
     position: relative;
     right: 46.5%;
     left: 46.5%;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 #up {
@@ -97,6 +94,8 @@ footer {
     display: block;
     border: none;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 #down {
@@ -104,6 +103,8 @@ footer {
     display: none;
     border: none;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .roww a {
