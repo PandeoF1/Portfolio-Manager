@@ -1,0 +1,15 @@
+.redirect {
+    float: right;
+    margin: 10px;
+}
+
+.redirect a {
+    float: right;
+    text-decoration: none;
+    margin-top: 18px;
+    color:white;
+    background-color: lightskyblue;
+    border-radius: 6px;
+    border-color: lightgray;
+    cursor: pointer;
+}

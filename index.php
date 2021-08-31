@@ -23,7 +23,7 @@ while ($row = $result->fetch_row())
 
 if ($_SERVER["REQUEST_URI"] == "/")
 	$div["/"] = 1;
-else if ($url_parse[0] == "admin" || $url_parse[0] == "error" || $url_parse[0] == "login" || $url_parse[0] == "projects" || $url_parse[0] == "view_articles" || $url_parse[0] == "register")
+else if ($url_parse[0] == "admin" || $url_parse[0] == "error" || $url_parse[0] == "login" || $url_parse[0] == "projects" || $url_parse[0] == "view_articles" || $url_parse[0] == "register" || $url_parse[0] == "view")
 	$div[$url_parse[0]] = 1;
 else
 	$div["error"] = 1;
@@ -216,7 +216,7 @@ else
 
 			while ($row = $result->fetch_row()) {
 				echo "<div class='text'>";
-				echo "<h2>$row[1]</h2>";
+				echo "<a href='". $row[0] ."'>$row[1]</a>";
 				echo $row[2];
 				echo "</div>";
 			}
@@ -423,5 +423,29 @@ else
 	}
 }
 ?>
+
+<?php if (isset($div["view"])) { 
+	$id = $_GET['id'];
+	$result = $mysqli->query(
+		"SELECT * FROM `projects` WHERE id = '$id'"
+	);
+	while ($row = $result->fetch_row()) {
+		if ($row[0] != NULL) { ?>
+			<head>
+				<link rel="stylesheet" href="/css/view.css">
+			</head>
+			<body style="padding-top: 7px;">
+				<h2> <?php echo $row[1]; ?> </h2>
+				<div> <?php echo $row[3]; ?> </div>
+				<div class="redirect">
+					<a href="/" class="redirect">Back to site</a>
+				</div>
+			</body>
+	<?php } else {
+		header("location: /projects/");
+	}
+}
+?>
+<?php } ?>
 
 </html>
