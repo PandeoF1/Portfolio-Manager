@@ -112,6 +112,7 @@ else
 					<textarea name="content" id="content"></textarea>
 					<button type="submit" class="publish">Publish article</button>
 				</form>
+				<a href="/view_articles">View articles</a>
 			</div>
 			<script>
 				CKEDITOR.replace('content');
