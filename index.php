@@ -66,7 +66,7 @@ else
 			</p>
 		</div>
 		<div id="footer-div" class="footer-div">
-			<button onclick="displaychange();" class="footer-btn" title="Contacts">
+			<button onclick="displaychange();" id="footer-btn" class="footer-btn" title="Contacts">
 				<img id="up" src="/images/footer-arrow-up.webp" />
 				<img id="down" src="/images/footer-arrow-down.webp" />
 			</button>
@@ -80,6 +80,11 @@ else
 				</div>
 			</footer>
 		</div>
+		<script>
+			while(1==1) {
+				document.getElementById('footer-div').height(document.getElementById('footer-btn').height);
+			}
+		</script>
 	</body>
 
 <?php } ?>
