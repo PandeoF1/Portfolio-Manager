@@ -31,3 +31,11 @@
     border: 0;
     cursor: pointer;
 }
+
+.redirect {
+    float: right;
+    margin-top: 10px;
+    color:lightskyblue;
+    border-radius: 15px;
+    border-color: lightgray;
+}
