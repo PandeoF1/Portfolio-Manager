@@ -139,9 +139,9 @@ else
 <?php if (isset($div["login"])) {
 	if ($_SESSION["authenticated"] == 1)
 		header("location: /admin/");
-	if (isset($_POST["identifiant"]) && isset($_POST["mdp"])) {
-		$email = $_POST["identifiant"];
-		$pass = $_POST["mdp"] . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgFDsgfd";
+	if (isset($_POST["login"]) && isset($_POST["password"])) {
+		$email = $_POST["login"];
+		$pass = $_POST["password"] . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgFDsgfd";
 		$result = $mysqli->query(
 			"SELECT * FROM `account` WHERE email = '$email'"
 		);
@@ -165,24 +165,24 @@ else
 		</head>
 
 		<div class="center">
-			<h2><b>Identification</b></h2>
+			<h2><b>Authentication</b></h2>
 			<form action=" " method="post">
 				<div class="txt_field">
-					<input type="text" name="identifiant" required>
+					<input type="text" name="login" required>
 					<span></span>
-					<label>Identifiant</label>
+					<label>Login</label>
 				</div>
 				<div class="txt_field">
-					<input type="password" name="mdp" required>
+					<input type="password" name="password" required>
 					<span></span>
-					<label>Mot de passe</label>
+					<label>Password</label>
 				</div>
 				<input type="submit" value="Login">
 				<br><br>
-				<?php if (isset($user)) { ?>
+				<?php if (isset($_POST['login'])) { ?>
 					<div class="alert">
 						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-						Le mot de passe ou l'identifiant n'est pas correct.
+						Login or password incorrect.
 					</div>
 					<br>
 				<?php } ?>
