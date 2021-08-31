@@ -10,6 +10,7 @@ $mysqli->query(
 session_start();
 
 $url_parse = explode("/", trim($_SERVER["REQUEST_URI"], "/"));
+$url_parse = explode("?", rtrim($url_parse[0], "?"));
 
 if ($url_parse[0] == "") //Nerf for title
 	$url_parse[0] = "/";
