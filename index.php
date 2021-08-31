@@ -115,7 +115,7 @@ else
 						<input type="text" name="title" id="title">
 					</div>
 					<div class="input-field">
-						<label for="title">Title</label>
+						<label for="summary">Summary</label>
 						<textarea name="summary" id="summary"></textarea>
 					</div>
 					<textarea name="content" id="content"></textarea>
