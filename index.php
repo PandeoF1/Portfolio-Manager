@@ -302,10 +302,10 @@ else
 						<input type='text' name='id' hidden value='" . $row[0] . "'>";
 						echo "<tr>
 							<td>" . $row[0] . "</td>";
-						echo "<td>" . $row[1] . "</td>>";
+						echo "<td>" . $row[1] . "</td>";
 						echo "<td>" . $row[2] . "</td>";
 						echo "<td>
-							<button type='submit' class='btn btn-primary'>🗑️</button>
+							<button type='submit'>🗑️</button>
 							</form>
 							</td>
 							</tr>";
