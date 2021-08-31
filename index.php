@@ -408,6 +408,7 @@ else
 				<?php } ?>
 			</form>
 		</div>
+		<a type="submit" href="/admin" class="btn btn-outline-primary" style="float: right;">Return</a>
 		</body>
 
 <?php
