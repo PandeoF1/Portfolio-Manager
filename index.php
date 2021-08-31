@@ -81,7 +81,10 @@ else
 			</footer>
 		</div>
 		<script>
-			document.getElementById('footer-div').height = document.getElementById('footer-btn').height;
+			function start() {
+				document.getElementById('footer-div').height = document.getElementById('footer-btn').height;
+			}
+			start();
 		</script>
 	</body>
 
