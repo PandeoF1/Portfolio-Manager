@@ -212,7 +212,7 @@ else
 
 			while ($row = $result->fetch_row()) {
 				echo "<div class='text'>";
-				echo "<span class='span-h2'>$row[1]</span>";
+				echo "<h2>$row[1]</h2>";
 				echo $row[2];
 				echo "</div>";
 			}

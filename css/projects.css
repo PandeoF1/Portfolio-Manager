@@ -19,6 +19,7 @@ div.text {
     margin-bottom: 24px;
     background-color: rgb(158, 158, 158);
     border-radius: 15px;
+    display: block;
 }
 
 div a {
@@ -26,16 +27,6 @@ div a {
     transition: border-bottom-color 0.2s ease, color 0.2s ease;
     text-decoration: none;
     border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
-}
-
-div .span-h2 {
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: calc(1.325rem + .9vw);
-    font-weight: bold;
-    display: block;
 }
 
 .navdir {
