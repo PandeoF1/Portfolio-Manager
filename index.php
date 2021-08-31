@@ -279,11 +279,18 @@ else
 				</div>
 			</div>
 			<table class="table table-dark">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Title</th>
+						<th>Message</th>
+					</tr>
+				</thead>
 				<tbody>
 					<?php
 					if (isset($_POST["id"])) {
 						$result = $mysqli->query(
-							"DELETE FROM `projects` WHERE `projects`.`id` = ".$_POST["id"]
+							"DELETE FROM `projects` WHERE `projects`.`id` = " . $_POST["id"]
 						);
 					}
 					$result = $mysqli->query(
@@ -299,10 +306,6 @@ else
 						echo "<tr>
 							<th>Titre</th>
 							<td>" . $row[1] . "</td>
-							</tr>";
-						echo "<tr>
-							<th>Message</th>
-							<td>" . $row[2] . "</td>
 							</tr>";
 						echo "<tr>
 							<th>Message</th>
