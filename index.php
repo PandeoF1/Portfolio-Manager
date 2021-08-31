@@ -23,7 +23,7 @@ while ($row = $result->fetch_row())
 
 if ($_SERVER["REQUEST_URI"] == "/")
 	$div["/"] = 1;
-else if ($url_parse[0] == "admin" || $url_parse[0] == "error" || $url_parse[0] == "login" || $url_parse[0] == "projects" || $url_parse[0] == "view_articles")
+else if ($url_parse[0] == "admin" || $url_parse[0] == "error" || $url_parse[0] == "login" || $url_parse[0] == "projects" || $url_parse[0] == "view_articles" || $url_parse[0] == "register")
 	$div[$url_parse[0]] = 1;
 else
 	$div["error"] = 1;
@@ -120,6 +120,7 @@ else
 				<div class="redirect">
 					<a href="/" class="redirect">Back to site</a>
 					<a href="/view_articles" class="redirect">View articles</a>
+					<a href="/register" class="redirect">Register</a>
 				</div>
 
 			</div>
@@ -263,7 +264,15 @@ else
 	</body>
 <?php } ?>
 
-<?php if (isset($div["view_articles"])) { ?>
+<?php if (isset($div["view_articles"])) {
+	if ($_SESSION["authenticated"] == 1) {
+		$version = file_get_contents('https://raw.githubusercontent.com/PandeoF1/Portfolio-Manager/main/version?token=AN5LJNZYP2I3TSMXCUNZMQTBGDFF2');
+		$result = $mysqli->query(
+			"SELECT * FROM `version`"
+		);
+		while ($row = $result->fetch_row())
+			$db_version = $row[1];
+?>
 
 	<head>
 		<title><?php echo $title ?></title>
@@ -274,6 +283,9 @@ else
 	<body style="padding-top: 7px">
 		<div class="container">
 			<div class="row mb-4">
+				<div class="col-xl-6">
+					<div class="text-md-left dataTables_filter" id="dataTable_filter"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search" name="search_input" id="search_input" onkeyup="fulkter()"></label></div>
+				</div>
 				<div class="col-xl-12">
 					<a type="submit" href="/admin" class="btn btn-outline-primary" style="float: right;">Return</a>
 				</div>
@@ -316,6 +328,35 @@ else
 		</div>
 	</body>
 
-<?php } ?>
+	<?php
+	} else {
+		header("location: /login/");
+	}
+}
+?>
+
+<?php if (isset($div["register"])) {
+	if ($_SESSION["authenticated"] == 1) {
+		$version = file_get_contents('https://raw.githubusercontent.com/PandeoF1/Portfolio-Manager/main/version?token=AN5LJNZYP2I3TSMXCUNZMQTBGDFF2');
+		$result = $mysqli->query(
+			"SELECT * FROM `version`"
+		);
+		while ($row = $result->fetch_row())
+			$db_version = $row[1];
+?>
+
+	<head>
+		<title><?php echo $title ?></title>
+	</head>
+
+	<body style="padding-top: 7px">
+	</body>
+
+	<?php
+	} else {
+		header("location: /login/");
+	}
+}
+?>
 
 </html>
