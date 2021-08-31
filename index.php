@@ -30,7 +30,7 @@ else
 
 ?>
 
-<!-- Portfolio - Manager | By : P.Clement & N.Théo (Pandeo_F1) - https://github.com/PandeoF1/Portfolio-Manager -->
+<!--  Portfolio - Manager | By : P.Clement & N.Théo (Pandeo_F1) - https://github.com/PandeoF1/Portfolio-Manager -->
 
 <!DOCTYPE html>
 <html>
