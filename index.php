@@ -274,61 +274,61 @@ else
 			$db_version = $row[1];
 ?>
 
-	<head>
-		<title><?php echo $title ?></title>
-		<link rel="stylesheet" href="/css/bootstrap.min.css">
-		<script src="/js/fulkter.js"></script>
-	</head>
+		<head>
+			<title><?php echo $title ?></title>
+			<link rel="stylesheet" href="/css/bootstrap.min.css">
+			<script src="/js/fulkter.js"></script>
+		</head>
 
-	<body style="padding-top: 7px">
-		<div class="container">
-			<div class="row mb-4">
-				<div class="col-xl-12">
-					<a type="submit" href="/admin" class="btn btn-outline-primary" style="float: right;">Return</a>
+		<body style="padding-top: 7px">
+			<div class="container">
+				<div class="row mb-4">
+					<div class="col-xl-12">
+						<a type="submit" href="/admin" class="btn btn-outline-primary" style="float: right;">Return</a>
+					</div>
+					<div class="col-xl-12" style="margin-top: 10px;">
+						<div class="text-md-left dataTables_filter" id="dataTable_filter" style="float: right;"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search" name="search_input" id="search_input" onkeyup="fulkter()"></label></div>
+					</div>
 				</div>
-				<div class="col-xl-12" style="margin-top: 10px;">
-					<div class="text-md-left dataTables_filter" id="dataTable_filter" style="float: right;"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search" name="search_input" id="search_input" onkeyup="fulkter()"></label></div>
-				</div>
-			</div>
-			<table class="table table-dark">
-				<thead>
-					<tr>
-						<th>Id</th>
-						<th>Title</th>
-						<th>Message</th>
-						<th>Action</th>
-					</tr>
-				</thead>
-				<tbody id="table_body">
-					<?php
-					if (isset($_POST["id"])) {
+				<table class="table table-dark">
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Title</th>
+							<th>Message</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody id="table_body">
+						<?php
+						if (isset($_POST["id"])) {
+							$result = $mysqli->query(
+								"DELETE FROM `projects` WHERE `projects`.`id` = " . $_POST["id"]
+							);
+						}
 						$result = $mysqli->query(
-							"DELETE FROM `projects` WHERE `projects`.`id` = " . $_POST["id"]
+							"SELECT * FROM `projects`"
 						);
-					}
-					$result = $mysqli->query(
-						"SELECT * FROM `projects`"
-					);
-					while ($row = $result->fetch_row()) {
-						echo "<form action='' method='POST'>
+						while ($row = $result->fetch_row()) {
+							echo "<form action='' method='POST'>
 						<input type='text' name='id' hidden value='" . $row[0] . "'>";
-						echo "<tr>
+							echo "<tr>
 							<td>" . $row[0] . "</td>";
-						echo "<td>" . $row[1] . "</td>";
-						echo "<td>" . $row[2] . "</td>";
-						echo "<td>
+							echo "<td>" . $row[1] . "</td>";
+							echo "<td>" . $row[2] . "</td>";
+							echo "<td>
 							<button type='submit' style='background-color: transparent; border: 0;'>🗑️</button>
 							</form>
 							</td>
 							</tr>";
-					}
-					?>
-				</tbody>
-			</table>
-		</div>
-	</body>
+						}
+						?>
+					</tbody>
+				</table>
+			</div>
+		</body>
 
-	<?php
+<?php
 	} else {
 		header("location: /login/");
 	}
@@ -345,14 +345,83 @@ else
 			$db_version = $row[1];
 ?>
 
-	<head>
-		<title><?php echo $title ?></title>
-	</head>
+<?php if (isset($div["login"])) {
+	if (isset($_POST["login"]) && isset($_POST["password"]) && isset($_POST["rpassword"])) {
+		if ($_POST["password"] == $_POST["rpassword"]) {
+			$email = $_POST["login"];
+			$pass = $_POST["password"] . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgFDsgfd";
+			$result = $mysqli->query(
+				"SELECT COUNT(*) FROM `account` WHERE email = '$email'"
+			);
+			if ($result == 0) {
+				$passhash = password_hash($pass, PASSWORD_DEFAULT);
+				$mysqli->query(
+					"INSERT INTO `account` (`id`, `email`, `password`) VALUES (NULL, '" . $email . "', '" . $passhash . "')"
+				);
+				echo "<script type='text/javascript'> alert('Success !'); </script>";
+			} else {
+				$error = 2;
+			}
+		} else {
+			$error = 1;
+		}
+		
+		while ($row = $result->fetch_row()) {
+			echo password_hash($pass, PASSWORD_DEFAULT) . "<br>";
+			if (password_verify($pass, $row[2])) {
+				$_SESSION["authenticated"] = 1;
+				$_SESSION["username"] = $row[1];
+				$_SESSION["admin"] = $row[3];
+				header("location: /admin/");
+			}
+		}
+	}
+?>
 
-	<body style="padding-top: 7px">
-	</body>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="/css/login.css">
+		</head>
 
-	<?php
+		<div class="center">
+			<h2><b>Register</b></h2>
+			<form action="" method="post">
+				<div class="txt_field">
+					<input type="text" name="login" required>
+					<span></span>
+					<label>Login</label>
+				</div>
+				<div class="txt_field">
+					<input type="password" name="password" required>
+					<span></span>
+					<label>Password</label>
+				</div>
+				<div class="txt_field">
+					<input type="rpassword" name="rpassword" required>
+					<span></span>
+					<label>Repeat password</label>
+				</div>
+				<input type="submit" value="Login">
+				<br><br>
+				<?php if ($error == 1) { ?>
+					<div class="alert">
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						Passwords are not same.
+					</div>
+					<br>
+				<?php } ?>
+				<?php if ($error == 2) { ?>
+					<div class="alert">
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						Account already created.
+					</div>
+					<br>
+				<?php } ?>
+			</form>
+		</div>
+		</body>
+
+<?php
 	} else {
 		header("location: /login/");
 	}
