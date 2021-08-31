@@ -39,8 +39,11 @@ div.text a {
 .navbar {
     text-align: center;
     position: absolute;
-    left: 37%;
-    right: 37%;
+    left: 1px;
+    right: 1px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar a {
