@@ -22,7 +22,7 @@ div.text {
     display: block;
 }
 
-div a {
+div.text a {
     color: inherit;
     transition: border-bottom-color 0.2s ease, color 0.2s ease;
     text-decoration: none;
