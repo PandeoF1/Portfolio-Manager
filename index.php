@@ -408,7 +408,7 @@ else
 				<?php } ?>
 			</form>
 		</div>
-		<a type="submit" href="/admin" class="btn btn-outline-primary" style="float: right; margin-right: 10px;">Return</a>
+		<a type="submit" href="/admin" class="btn btn-outline-primary" style="float: right; margin-right: 10px; margin-top: 10px;">Return</a>
 		</body>
 
 <?php
