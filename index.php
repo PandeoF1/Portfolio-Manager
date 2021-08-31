@@ -363,16 +363,6 @@ else
 		} else {
 			$error = 1;
 		}
-		
-		while ($row = $result->fetch_row()) {
-			echo password_hash($pass, PASSWORD_DEFAULT) . "<br>";
-			if (password_verify($pass, $row[2])) {
-				$_SESSION["authenticated"] = 1;
-				$_SESSION["username"] = $row[1];
-				$_SESSION["admin"] = $row[3];
-				header("location: /admin/");
-			}
-		}
 	}
 ?>
 
@@ -395,7 +385,7 @@ else
 					<label>Password</label>
 				</div>
 				<div class="txt_field">
-					<input type="rpassword" name="rpassword" required>
+					<input type="password" name="rpassword" required>
 					<span></span>
 					<label>Repeat password</label>
 				</div>
