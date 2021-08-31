@@ -82,7 +82,7 @@ else
 		</div>
 		<script>
 			while(1==1) {
-				document.getElementById('footer-div').height(document.getElementById('footer-btn').height);
+				document.getElementById('footer-div').height = document.getElementById('footer-btn').height;
 			}
 		</script>
 	</body>
