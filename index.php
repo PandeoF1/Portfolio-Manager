@@ -87,7 +87,7 @@ else
 	if ($_SESSION["authenticated"] == 1) {
 		if ($_POST["title"]) {
 			$result = $mysqli->query(
-				"INSERT INTO `projects` (`id`, `title`, `text`) VALUES (NULL, '" . $_POST["title"] . "', '" . $_POST["content"] . "') "
+				"INSERT INTO `projects` (`id`, `title`, `summary`, `text`) VALUES (NULL, '" . $_POST["title"] . "', '" . $_POST["summary"] . "', '" . $_POST["content"] . "') "
 			);
 		}
 		$version = file_get_contents('https://raw.githubusercontent.com/PandeoF1/Portfolio-Manager/main/version?token=AN5LJNZYP2I3TSMXCUNZMQTBGDFF2');
@@ -113,6 +113,10 @@ else
 					<div class="input-field">
 						<label for="title">Title</label>
 						<input type="text" name="title" id="title">
+					</div>
+					<div class="input-field">
+						<label for="title">Title</label>
+						<textarea name="summary" id="summary"></textarea>
 					</div>
 					<textarea name="content" id="content"></textarea>
 					<button type="submit" class="publish">Publish article</button>
@@ -295,6 +299,7 @@ else
 						<tr>
 							<th>Id</th>
 							<th>Title</th>
+							<th>Summary</th>
 							<th>Message</th>
 							<th>Action</th>
 						</tr>
@@ -316,6 +321,7 @@ else
 							<td>" . $row[0] . "</td>";
 							echo "<td>" . $row[1] . "</td>";
 							echo "<td>" . $row[2] . "</td>";
+							echo "<td>" . $row[3] . "</td>";
 							echo "<td>
 							<button type='submit' style='background-color: transparent; border: 0;'>🗑️</button>
 							</form>
