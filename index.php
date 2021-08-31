@@ -211,10 +211,10 @@ else
 			<?php
 
 			while ($row = $result->fetch_row()) {
-				echo "<p class='text'>";
+				echo "<div class='text'>";
 				echo "<span class='span-h2'>$row[1]</span>";
 				echo $row[2];
-				echo "</p>";
+				echo "</div>";
 			}
 			?>
 		</div>
