@@ -216,7 +216,7 @@ else
 
 			while ($row = $result->fetch_row()) {
 				echo "<div class='text'>";
-				echo "<a href='/view?id=`". $row[0] ."`'>$row[1]</a>";
+				echo "<a href='/view?id=". $row[0] ."'>$row[1]</a><br>";
 				echo $row[2];
 				echo "</div>";
 			}
