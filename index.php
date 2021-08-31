@@ -343,9 +343,7 @@ else
 		);
 		while ($row = $result->fetch_row())
 			$db_version = $row[1];
-?>
 
-<?php if (isset($div["login"])) {
 	if (isset($_POST["login"]) && isset($_POST["password"]) && isset($_POST["rpassword"])) {
 		if ($_POST["password"] == $_POST["rpassword"]) {
 			$email = $_POST["login"];
