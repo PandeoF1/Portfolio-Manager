@@ -85,10 +85,9 @@ else
 <?php } ?>
 <?php if (isset($div["admin"])) {
 	if ($_SESSION["authenticated"] == 1) {
-		if($_POST["title"])
-		{
+		if ($_POST["title"]) {
 			$result = $mysqli->query(
-				"INSERT INTO `projects` (`id`, `title`, `text`) VALUES (NULL, '" .$_POST["title"]. "', '" .$_POST["content"]. "') "
+				"INSERT INTO `projects` (`id`, `title`, `text`) VALUES (NULL, '" . $_POST["title"] . "', '" . $_POST["content"] . "') "
 			);
 		}
 		$version = file_get_contents('https://raw.githubusercontent.com/PandeoF1/Portfolio-Manager/main/version?token=AN5LJNZYP2I3TSMXCUNZMQTBGDFF2');
@@ -103,7 +102,7 @@ else
 
 		<head>
 			<meta charset="utf-8">
-			<title>Add article</title>
+			<title><?php echo $title ?></title>
 			<script src="/css/ckeditor/ckeditor.js"></script>
 			<link rel="stylesheet" href="/css/add_article.css">
 		</head>
@@ -122,7 +121,7 @@ else
 					<a href="/" class="redirect">Back to site</a>
 					<a href="/view_articles" class="redirect">View articles</a>
 				</div>
-				
+
 			</div>
 			<script>
 				CKEDITOR.replace('content');
@@ -266,7 +265,58 @@ else
 
 <?php if (isset($div["view_articles"])) { ?>
 
-	<p>Test</p>
+	<head>
+		<title><?php echo $title ?></title>
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<script src="/js/fulkter.js"></script>
+	</head>
+
+	<body style="padding-top: 7px">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-xl-12">
+					<a type="submit" href="panel.php" class="btn btn-outline-primary" style="float: right;">Retour</a>
+				</div>
+			</div>
+			<table class="table table-dark">
+				<tbody>
+					<?php
+					if (isset($_POST["id"])) {
+						$result = $mysqli->query(
+							"DELETE FROM `projects` WHERE `projects`.`id` = ".$_POST["id"]
+						);
+					}
+					$result = $mysqli->query(
+						"SELECT * FROM `projects`"
+					);
+					while ($row = $result->fetch_row()) {
+						echo "<form action='' method='POST'>
+						<input type='text' name='id' hidden value='" . $row[0] . "'>";
+						echo "<tr>
+							<th>ID</th>
+							<td>" . $row[0] . "</td>
+							</tr>";
+						echo "<tr>
+							<th>Titre</th>
+							<td>" . $row[1] . "</td>
+							</tr>";
+						echo "<tr>
+							<th>Message</th>
+							<td>" . $row[2] . "</td>
+							</tr>";
+						echo "<tr>
+							<th>Message</th>
+							<td>" . $row[2] . "</td>
+							</tr>";
+						echo "<tr>
+							<button type='submit' class='btn btn-primary'>🗑️</button>
+							</form>";
+					}
+					?>
+				</tbody>
+			</table>
+		</div>
+	</body>
 
 <?php } ?>
 
