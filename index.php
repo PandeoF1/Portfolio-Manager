@@ -80,12 +80,6 @@ else
 				</div>
 			</footer>
 		</div>
-		<script>
-			function start() {
-				document.getElementById('footer-div').style.height = document.getElementById('footer-btn').style.height;
-			}
-			start();
-		</script>
 	</body>
 
 <?php } ?>
