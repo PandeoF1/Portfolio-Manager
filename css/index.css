@@ -70,8 +70,9 @@ footer {
 
 .footer-div {
     bottom: 0;
-    position: sticky;
+    position: fixed;
     z-index: 10;
+    height: 16px;
 }
 
 .footer-btn {
@@ -84,7 +85,7 @@ footer {
     background-color: transparent;
     bottom: 0;
     z-index: 100;
-    position: absolute;
+    position: relative;
     right: 46.5%;
     left: 46.5%;
     margin-bottom: 0;
