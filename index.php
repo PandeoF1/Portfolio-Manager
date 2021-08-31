@@ -351,7 +351,8 @@ else
 			$result = $mysqli->query(
 				"SELECT COUNT(*) FROM `account` WHERE email = '$email'"
 			);
-			if ($result == 0) {
+			$row = $result->fetch_row();
+			if ($row[0] == 0) {
 				$passhash = password_hash($pass, PASSWORD_DEFAULT);
 				$mysqli->query(
 					"INSERT INTO `account` (`id`, `email`, `password`) VALUES (NULL, '" . $email . "', '" . $passhash . "')"
