@@ -9,6 +9,7 @@
     position: absolute;
     left: 37%;
     right: 37%;
+    width: fit-content;
 }
 
 .navbar a {
