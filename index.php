@@ -305,7 +305,7 @@ else
 						echo "<td>" . $row[1] . "</td>";
 						echo "<td>" . $row[2] . "</td>";
 						echo "<td>
-							<button type='submit'>🗑️</button>
+							<button type='submit' style='background-color: transparent; border: 0;'>🗑️</button>
 							</form>
 							</td>
 							</tr>";
