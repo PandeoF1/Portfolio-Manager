@@ -99,15 +99,20 @@ else
 			<meta charset="utf-8">
 			<title>Add article</title>
 			<script src="/css/ckeditor/ckeditor.js"></script>
+			<link rel="stylesheet" href="/css/add_article.css">
 		</head>
 
 		<body>
-			<form action="" method="post">
-				<input type="text" id="title">
-				<div id="content">
-				</div>
-				<button type="submit">Publish article</button>
-			</form>
+			<div class="container">
+				<form action="" method="post">
+					<div class="input-field">
+						<label for="title">Title</label>
+						<input type="text" name="title" id="title">
+					</div>
+					<textarea name="content" id="content"></textarea>
+					<button type="submit" class="publish">Publish article</button>
+				</form>
+			</div>
 			<script>
 				CKEDITOR.replace('content');
 			</script>
