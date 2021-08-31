@@ -275,7 +275,7 @@ else
 		<div class="container">
 			<div class="row mb-4">
 				<div class="col-xl-12">
-					<a type="submit" href="panel.php" class="btn btn-outline-primary" style="float: right;">Retour</a>
+					<a type="submit" href="/admin" class="btn btn-outline-primary" style="float: right;">Return</a>
 				</div>
 			</div>
 			<table class="table table-dark">
