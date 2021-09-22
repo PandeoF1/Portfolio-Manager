@@ -1,5 +1,12 @@
 User-agent: *
 Allow: /$
 Allow: /projects
-Disallow: /*
+Disallow: /files
+Disallow: /admin
+Disallow: /login
+Disallow: /assets
+Disallow: /config
+Disallow: /css
+Disallow: /images
+Disallow: /js
 Disallow: /*/
