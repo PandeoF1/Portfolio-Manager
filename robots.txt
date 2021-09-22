@@ -1,6 +1,4 @@
 User-agent: *
-Allow: /$
-Allow: /projects
 Disallow: /files
 Disallow: /admin
 Disallow: /login
@@ -10,3 +8,5 @@ Disallow: /css
 Disallow: /images
 Disallow: /js
 Disallow: /
+Allow: /$
+Allow: /projects
