@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: *
-Allow: index.php
+Allow: /$
+Allow: /projects
