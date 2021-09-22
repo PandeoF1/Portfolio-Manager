@@ -9,4 +9,4 @@ Disallow: /config
 Disallow: /css
 Disallow: /images
 Disallow: /js
-Disallow: /*/
+Disallow: /
