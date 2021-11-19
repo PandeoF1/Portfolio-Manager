@@ -62,7 +62,7 @@ else
 		<div style="margin-top: 3.8em; margin-left:auto; margin-right:auto; width: 71%;">
 			<p class="text">
 				<span class="span-h2">About me :</span>
-				Hello, my name is PLANQUE Clément. I'm a french student in IT sector...
+				Hello, my name is PLANQUE Clément. I'm a french student in IT sector. I'm passionate IT and Japan. In the long run, I would like to live in Japan as a network administrator in the Cisco company.
 				
 			</p>
 		</div>
@@ -237,8 +237,7 @@ else
 		<link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
 		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-		<link rel="stylesheet" href="assets/css/untitled-1.css">
-		<link rel="stylesheet" href="assets/css/untitled.css">
+		<link rel="stylesheet" href="assets/css/error.css">
 	</head>
 
 	<body id="page-top">
