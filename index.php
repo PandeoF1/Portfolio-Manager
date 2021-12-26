@@ -219,7 +219,6 @@ else
 				echo "<div class='text'>";
 				echo "<a href='/view?id=". $row[0] ."'>$row[1]</a><br>";
 				echo $row[2];
-				echo "<br>";
 				echo "<div class='redirect'>
 						<a href='/view?id=". $row[0] ."' class='redirect'>See more</a>
 					</div>";
