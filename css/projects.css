@@ -68,6 +68,8 @@ div.text a {
     text-decoration: none;
     margin-top: 18px;
     padding: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     color:white;
     background-color: #16A7F2;
     border-radius: 6px;
