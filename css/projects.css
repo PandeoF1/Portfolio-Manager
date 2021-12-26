@@ -67,6 +67,7 @@ div.text a {
     float: right;
     text-decoration: none;
     margin-top: 18px;
+    padding: 3px;
     color:white;
     background-color: #16A7F2;
     border-radius: 6px;
