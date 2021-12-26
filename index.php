@@ -441,7 +441,7 @@ else
 				<h2> <?php echo $row[1]; ?> </h2>
 				<div> <?php echo $row[3]; ?> </div>
 				<div class="redirect">
-					<a href="/" class="redirect">Back to site</a>
+					<a href="/projects" class="redirect">Back to site</a>
 				</div>
 			</body>
 	<?php } else {
