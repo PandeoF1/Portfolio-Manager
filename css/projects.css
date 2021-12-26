@@ -57,3 +57,19 @@ div.text a {
     margin-right: 15px;
     width: 100px;
 }
+
+.redirect {
+    float: right;
+    margin: 10px;
+}
+
+.redirect a {
+    float: right;
+    text-decoration: none;
+    margin-top: 18px;
+    color:white;
+    background-color: #16A7F2;
+    border-radius: 6px;
+    border-color: lightgray;
+    cursor: pointer;
+}
