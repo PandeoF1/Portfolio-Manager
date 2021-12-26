@@ -217,7 +217,7 @@ else
 
 			while ($row = $result->fetch_row()) {
 				echo "<div class='text'>";
-				echo "<p class='title'> $row[1]</p><br>";
+				echo "<p class='title'> $row[1]</p><div style='height:1px;font-size:1px;'>&nbsp;</div>";
 				echo $row[2];
 				echo "<div class='redirect'>
 						<a href='/view?id=". $row[0] ."' class='redirect'>See more</a>
