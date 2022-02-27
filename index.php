@@ -145,10 +145,8 @@ else
 	if ($_SESSION["authenticated"] == 1)
 		header("location: /admin/");
 	if (isset($_POST["login"]) && isset($_POST["password"])) {
-		$email = $_POST["login"];
-		$pass = $_POST["password"] . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgFDsgfd";
-		$email = mysql_real_escape_string($email);
-		$pass = mysql_real_escape_string($pass);
+		$email = $mysqli->real_escape_string($_POST["login"]);
+		$pass = $mysqli->real_escape_string($_POST["password"]) . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgFDsgfd";
 		$result = $mysqli->query(
 			"SELECT * FROM `account` WHERE email = '$email'"
 		);
