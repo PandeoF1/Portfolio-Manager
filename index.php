@@ -145,8 +145,8 @@ else
 	if ($_SESSION["authenticated"] == 1)
 		header("location: /admin/");
 	if (isset($_POST["login"]) && isset($_POST["password"])) {
-		$email = $_POST["login"];
-		$pass = $_POST["password"] . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgFDsgfd";
+		$email = addslashes($_POST["login"]);
+		$pass = addslashes($_POST["password"]) . "SHFIUdhsggfiyhDSAHfgSHFIUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgSHFIUdhUdhsggfiyhDSAHfgFDsgfd";
 		$result = $mysqli->query(
 			"SELECT * FROM `account` WHERE email = '$email'"
 		);
