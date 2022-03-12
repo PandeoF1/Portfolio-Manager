@@ -68,11 +68,11 @@ footer {
     padding-bottom: 1.4rem;
     padding-left: 17px;
     background-color: #36393f;
-    display: none;
+    display: block;
 }
 
 .footer-div {
-    bottom: 0;
+    bottom: 98px;
     margin: 0;
     padding: 0;
     position: fixed;
@@ -97,7 +97,7 @@ footer {
 
 #up {
     width: 95%;
-    display: block;
+    display: none;
     border: none;
     position: relative;
     margin: 0;
@@ -106,7 +106,7 @@ footer {
 
 #down {
     width: 95%;
-    display: none;
+    display: block;
     border: none;
     position: relative;
     margin: 0;
