@@ -283,7 +283,6 @@ else
 
 		<head>
 			<title><?php echo $title ?></title>
-			<link rel="stylesheet" href="/css/bootstrap.min.css">
 			<script src="/js/fulkter.js"></script>
 		</head>
 
