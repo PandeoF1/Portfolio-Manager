@@ -8,10 +8,7 @@
     text-decoration: none;
     margin-top: 18px;
     color:white;
-    background: #E1E41D;
-    background: -moz-linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
-    background: -webkit-linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
-    background: linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
+    background-color: #16A7F2;
     border-radius: 6px;
     border-color: lightgray;
     cursor: pointer;
@@ -24,4 +21,14 @@ img {
                 0 4px 4px rgba(0,0,0,0.15), 
                 0 8px 8px rgba(0,0,0,0.10),
                 0 16px 16px rgba(0,0,0,0.05);
+}
+
+html {
+    background: #E1E41D;
+    background: -moz-linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
+    background: -webkit-linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
+    background: linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
+    padding-top: 7px;
+    padding-left: 15%;
+    padding-right: 15%;
 }

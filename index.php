@@ -437,7 +437,7 @@ else
 			<head>
 				<link rel="stylesheet" href="/css/view.css">
 			</head>
-			<body style="padding-top: 7px; background-color: #f79f2d; padding-left: 15%; padding-right: 15%;">
+			<body>
 				<h2> <?php echo $row[1]; ?> </h2>
 				<div> <?php echo $row[3]; ?> </div>
 				<div class="redirect">
