@@ -12,6 +12,7 @@
     border-radius: 6px;
     border-color: lightgray;
     cursor: pointer;
+    padding: 1.5px;
 }
 
 img {
