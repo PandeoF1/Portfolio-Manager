@@ -24,10 +24,7 @@ img {
 }
 
 html {
-    background: #E1E41D;
-    background: -moz-linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
-    background: -webkit-linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
-    background: linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
+    background: linear-gradient(45deg, rgb(225,228,29), rgb(169,121,38));
     padding-top: 7px;
     padding-left: 15%;
     padding-right: 15%;
