@@ -121,6 +121,10 @@ footer {
     margin-left: 24px;
 }
 
+.roww a:hover {
+    color: #D9ED38;
+}
+
 .roww p {
     color: #FFFFFF;
     text-decoration: none;
