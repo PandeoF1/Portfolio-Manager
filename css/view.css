@@ -8,7 +8,10 @@
     text-decoration: none;
     margin-top: 18px;
     color:white;
-    background-color: #16A7F2;
+    background: #E1E41D;
+    background: -moz-linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
+    background: -webkit-linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
+    background: linear-gradient(45deg, #E1E41D 0%, #A97926 100%);
     border-radius: 6px;
     border-color: lightgray;
     cursor: pointer;
