@@ -31,3 +31,7 @@ html {
     background-repeat: no-repeat;
     height: 100%;
 }
+
+body {
+    no background-color: var(--bs-body-bg);
+}
