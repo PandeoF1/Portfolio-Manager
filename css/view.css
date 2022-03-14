@@ -33,5 +33,5 @@ html {
 }
 
 body {
-    no background-color: var(--bs-body-bg);
+    background-color: unset;
 }
