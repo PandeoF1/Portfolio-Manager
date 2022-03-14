@@ -28,4 +28,6 @@ html {
     padding-top: 7px;
     padding-left: 15%;
     padding-right: 15%;
+    background-repeat: no-repeat;
+    height: 100%;
 }
