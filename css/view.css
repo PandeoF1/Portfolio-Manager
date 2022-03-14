@@ -29,7 +29,8 @@ html {
     padding-left: 15%;
     padding-right: 15%;
     background-repeat: no-repeat;
-    height: max-content;
+    min-height: 100%;
+    height: auto;
 }
 
 body {
