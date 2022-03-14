@@ -35,3 +35,11 @@ html {
 body {
     background-color: unset;
 }
+
+a {
+    color: #ffd255;
+}
+
+a:hover {
+    color: #504116;
+}
