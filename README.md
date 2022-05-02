@@ -28,7 +28,3 @@
  > - apache <br />
  > - mysql/mariadb <br />
  > - php (xml / mysqli)<br />
-
-### Demo :
-- User : admin
-- Pass : admin
