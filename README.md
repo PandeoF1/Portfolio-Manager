@@ -32,8 +32,3 @@
 ### Demo :
 - User : admin
 - Pass : admin
-
-### Todo :
-- [ ] Do the program
-
-### Other :
