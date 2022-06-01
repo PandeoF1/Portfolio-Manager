@@ -24,7 +24,7 @@ img {
 }
 
 html {
-    background: linear-gradient(45deg, rgb(225,228,29), rgb(169,121,38));
+    background: #0A0A0A;
     padding-top: 7px;
     padding-left: 15%;
     padding-right: 15%;
@@ -43,4 +43,8 @@ a {
 
 a:hover {
     color: #504116;
+}
+
+p {
+    color: #ed143d;
 }
