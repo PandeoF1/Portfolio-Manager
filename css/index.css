@@ -30,7 +30,7 @@ body {
     padding-top: 21px;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: #353235;
+    background-color: #0A0A0A;
 }
 
 p.text {
@@ -45,7 +45,7 @@ p.text {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: 24px;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 244, 255, 1);
     border-radius: 15px;
 }
 
@@ -121,7 +121,7 @@ footer {
 }
 
 .roww a:hover {
-    color: #D9ED38;
+    color: #16A7F2;
 }
 
 .roww p {
