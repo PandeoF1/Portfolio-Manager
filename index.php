@@ -438,7 +438,7 @@ else
 				<link rel="stylesheet" href="/css/view.css">
 			</head>
 			<body>
-				<h2> <?php echo $row[1]; ?> </h2>
+				<h2 class="title"> <?php echo $row[1]; ?> </h2>
 				<div> <?php echo $row[3]; ?> </div>
 				<div class="redirect">
 					<a href="/projects" class="redirect">Back to site</a>

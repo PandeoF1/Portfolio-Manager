@@ -3,6 +3,10 @@
     margin: 10px;
 }
 
+h2.title {
+    color: aliceblue;
+}
+
 .redirect a {
     float: right;
     text-decoration: none;
