@@ -1,6 +1,5 @@
 body {
-    background-repeat: no-repeat;
-    background-color: #000000;
+    background-color: #0A0A0A;
     background-size: 100%;
     padding-top: 21px;
 }
@@ -17,7 +16,8 @@ div.text {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: 24px;
-    background-color: rgb(158, 158, 158);
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #28a7f2;
     border-radius: 15px;
     display: block;
 }
